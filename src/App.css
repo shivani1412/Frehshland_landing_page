@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+
+.main-container {
+    background-image: url('./components/assets/img/banner.png');
+    min-height: 300px;
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+  }
+  .overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+  }
+  
+  .navbarheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    position: relative; 
+    z-index: 1; 
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  .logo img{
+   height: 4rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 1rem;
+
+  }
+  
+  .nav-links li {
+    margin-right: 2.2rem;
+    font-size: 13.2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    color: #fff;
+    margin-right: 1.5rem;
+    font-size: 18px;
+  }
+  .navicon{
+    display: none;
+  }
+  .bi-chevron-down{
+    margin-left: 0.5rem;
+    font-size: 12px;
+  }
+  .heading{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #fff;
+    position: relative;
+    line-height: 20px;
+    font-family: 'Calistoga', serif;
+    letter-spacing: -1px;
+  }
+
+  /* items  */
+  .popularitems{
+    text-align: center;
+    margin-bottom: 4rem;
+
+  }
+  .popularitems h1{
+    color: #219028;
+    /* letter-spacing: px; */
+    font-family: serif;
+    font-weight: 600;
+    font-family: 'Calistoga', serif;
+  }
+  .popularitems p{
+
+  }
+  .fruits{
+    width: 14rem;
+  }
+  .fruits img{
+    width: 71%;
+  }
+  .fruitsitems{
+    width: 58rem;
+    margin: 100px auto;
+  }
+  .fruits .Basketbtn{
+    background-color: #219028;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 2rem;
+
+
+  }
+  .Basketbtn:hover{
+    background-color: #219028 !important;
+    color: #fff !important;
+  }
+  .allproductsbtn{
+    height: 60px;
+  }
+  .seebtn{
+    background-color: #219028 !important;
+    color: #fff !important;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* deadline */
+  .deadline{
+    background-color: #ebe9eb;
+    height: 40vh;
+  }
+  .deadlinetime{
+    width: 35%;
+    margin: auto auto;
+    padding: 3rem 1rem;
+    color: #666666;
+  }
+  .deadlinetime .time{
+    font-size: 7rem;
+  }
+ /* Freight */
+ .Freight{
+    background-color: #219028;
+    color: #fff;
+    height: 35vh;
+ }
+ .Freight h1{
+  font-family: 'Calistoga', serif;
+ }
+ /*seaosnal delicious */
+ .delicious{
+    background-color: #219028;
+    padding: 15px 15px;
+    
+ }
+ .delicious h1{
+  font-family: 'Calistoga', serif;
+ }
+ .colheight img{
+    height: 71%;
+ 
+ }
+ .overlayimg{
+    position: relative;
+    height: 300px;
+ }
+ .overlay-content{
+    z-index: 2; /* Ensure the content is above the overlay */
+
+ }
+ .overlaydiv {
+   position: absolute;
+    top: 20px;
+    left: 28px;
+    width: 27%;
+    height: 84%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff;
+    color: #fff;
+    font-weight: 600;
+  }
+  .overlaypassion{
+    left: 20.4rem;
+
+  }
+  .Asparagus{
+    left: 39rem;
+
+}
+  /* Commonfront */
+  .Commonfront{
+    color: #219028;
+    font-weight: bold;
+  }
+  .enable_content{
+    background-color: #00000066;
+    color: #fff;
+    height: 70px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 72%;
+    position: relative;
+    top: -51%;
+    left: 14%;
+
+   
+  }
+
+  /*      impact rapport*/
+  .impact{
+    height: 78vh;
+    background-color: #6666660f;
+    padding-top: 2rem;
+  }
+  .solarimpuls,.mission{
+    width: 38%;
+    margin-left: 17rem;
+
+  }
+
+  .IMPACT-REPORT{
+    background-color: #219028 !important;
+    color: #fff !important;
+    width: 80%;
+    height: 100%;
+    margin-left: 16rem;
+  }
+  .seasonproduct{
+    width: 71%;
+    margin-left: 9rem;
+  }
+  .inputfeildcol{
+    width: 66%;
+  }
+  .inputfeildcol p{
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .registerbtn{
+   height: 60px;
+
+  }
+  .registerbtn button {
+    background-color: #219028;
+    color: #fff;
+    width: 100%;
+    padding: 15px 0px;
+  }
+  .registerbtn button:hover{
+    background-color: #219028 !important;
+    color: #fff !important;
+  }
+  .subscribe{
+    color: #219028;
+    font-family: 'Calistoga', serif;
+
+  }
+  /* Contact */
+  .Contact{
+    background-color: #219028;
+    color: #fff;
+  }
+  .Contact h2{
+    font-family: 'Calistoga', serif;
+  }
+  .Contact .contactimg{
+    width: 73%;
+    margin-left: 9rem;
+
+  }
+  .Monday{
+    width: 72%;
+  }
+  /* Prices */
+  .prices h1{
+    font-family: 'Calistoga', serif;
+    color: #23395d;
+  }
+  .pricescol{
+    display: grid;
+    grid-template-columns: 230px 710px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    font-size: 17px;
+    
+  }
+  .juryimg{
+    width: 61%;
+    margin-left: 4rem;
+
+  }
+  .nation p{
+    margin-top: 1.5rem;
+  }
+  .nation p strong{
+    color: #23395d;
+  }
+  .hr{
+    width: 55%;
+   margin-left: 347px;
+  }
+  .politiken{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 129px;
+    margin-left: 182px;
+
+  }
+  .politiken p{
+    font-size: 12px;
+  }
+  /* footer */
+  .change{
+    height: 50px;
+    border: 1px solid #000 !important;
+    margin-left: 8rem;
+  }
+  .change .bi-globe{
+    margin-left: 10px;
+    font-size: 30px;
+    
+  }
+  .country{
+    position: relative;
+    top: -8px;
+  }
+  .footericon{
+    display: grid;
+    grid-template-columns: 198px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 21px;
+  }
+  .footericon ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+    font-size: 19px;
+  }
+ .kontrol {
+    width: 60%;
+    margin-left: 37px;
+  }
+  .imgicon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 24%;
+    /* padding-left: 6px; */
+    padding: 0px 9px;
+    column-gap: 7px;
+    margin-left: 14px;
+  }
+  .footer{
+    background: #f4f4f4;
+    padding: 83px 0px;
+  }
+  .footer .listsection ul li{
+    color: #219028;
+  }
+
+ 
+
+
+
+/* Media query for mobile devices (480px) */
+@media (max-width: 480px) {
+  .navicon{
+    display: block;
+  }
+  .nav-links{
+    display: none;
+  }
+  .logo img {
+    height: 3rem;
+}
+.navbarheader{
+  padding: 7px 0px;
+  background-color: #00000029;
+}
+  .navmenu{
+    position: fixed;
+    top: 0vh;
+    left: 23vh;
+    height: 100vh;
+    width: 60%;
+    background-color: #fff;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .navmenu li a{
+    color: #000;
+  }
+  .navmenu  .bi-x{
+    margin-left: 160px;
+    font-size: 30px;
+  }
+  .heading{
+    margin-top: 40px;
+
+  }
+  .fruitsitems {
+    width: 16rem;
+  }
+  /* deadline */
+  .deadlinetime{
+     width: 100%;  
+  }
+  .deadlinetime .time {
+    font-size: 4rem;
+}
+.Freight{
+  height: auto;
+}
+.deleivery{
+  margin-left: 0rem !important;
+}
+
+  .delicious {
+    width: 21rem;
+    padding: 5px 18px;
+}
+
+.delicious .px-5{
+  padding: 0px 0px !important;
+}
+
+.overlayimg {
+  position: relative;
+  height: auto;
+}
+.overlaydiv {
+  position: absolute;
+  top: 13px;
+  left: 23px;
+  width: 83%;
+  height: 28%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #fff;
+  color: #fff;
+  font-weight: 600;
+}
+.overlaypassion {
+ left: 1.7rem !important;
+  top: 13rem !important;
+}
+.Asparagus {
+  left: 1.7rem !important;
+  top: 25rem !important;
+}
+.enable_content {
+  height: 46px;
+  padding: 3px 0px;
+  width: 80%;
+  position: relative;
+  top: -51%;
+  left: 11%;
+  font-size: 12px;
+}
+.impact{
+  height: auto;
+}
+.solarimpuls, .mission {
+  width: 46%;
+  margin-left: 5rem;
+}
+.impact .px-5{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.impact hr{
+  width: 100%;
+  margin-left: 0rem !important;
+}
+.IMPACT-REPORT {
+  margin-left: 1rem;
+}
+.seasonproduct {
+  width: 100%;
+  margin-left: 0rem;
+}
+.inputfeildcol{
+  width: 100%;
+}
+.Contact .contactimg {
+  width: 100%; 
+   margin-left: 0rem;
+}
+.Monday{
+  width: 100%;
+}
+.pricescol{
+   display: block;
+}
+.nation p {
+  padding: 10px 20px;
+  margin-top: 1.5rem;
+  font-size: 16px;
+}
+.hr {
+  margin-left: 18px;
+  width: 90%;
+}
+.politiken {
+  display: grid;
+  grid-template-columns: 171px;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1px;
+  margin-left: -17px;
+}
+.change{
+ margin-left: 0rem;
+}
+.colheight img {
+  height: 100%;
+}
+
+.passionimg img{
+  height: 184px;
+  margin-top: 10px;
+
+}
+
+.Asparagusimg img{
+  height: 184px;
+    margin-top: 10px;
+}
+
+}
+
+/* media query for tab */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .navicon{
+    display: block;
+  }
+  .nav-links{
+    display: none;
+  }
+  .logo img {
+    height: 3rem;
+}
+.navbarheader{
+  padding: 7px 0px;
+  background-color: #00000029;
+}
+  .navmenu{
+    position: fixed;
+    top: 0vh;
+    left: 23vh;
+    height: 100vh;
+    width: 60%;
+    background-color: #fff;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .navmenu li a{
+    color: #000;
+  }
+  .navmenu  .bi-x{
+    margin-left: 160px;
+    font-size: 30px;
+  }
+  .fruitsitems {
+    width: 47rem;
+    margin: 100px auto;
+}
+.deadlinetime{
+  width: 100%;
+}
+.deleivery{
+  margin-left: 0rem !important;
+}
+.overlaydiv{
+  height: 66%;
+}
+.overlaypassion {
+  left: 16.44rem;
+}
+.Asparagus {
+  left: 31.5rem;
+}
+.impact{
+  height: auto;
+}
+.solarimpuls, .mission {
+  width: 58% !important;
+  margin-top: 36px;
+  margin-left: 3rem;
+}
+.impact .px-5{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.impact hr{
+  width: 100%;
+  margin-left: 5rem !important;
+}
+.IMPACT-REPORT {
+  margin-left: 5rem;
+}
+.seasonproduct {
+  width: 100%;
+  margin-top: 6rem;
+  margin-left: 0rem;
+}
+.inputfeildcol {
+  width: 100%;
+}
+.Contact .contactimg {
+  width: 100%;
+  margin-top: 4rem;
+  margin-left: 0rem;
+}
+.nation p {
+  padding: 0px 52px;
+}
+.juryimg {
+  margin-left: 7rem;
+}
+.politiken {
+  column-gap: 30px;
+  margin-left: 106px;
+}
+.hr {
+  width: 95%;
+  margin-left: 58px;
+}
+.change{
+  margin-left: 0rem;
+}
+ .footer .px-5 {
+  padding-right: 0rem!important;
+  padding-left: 0rem!important;
+}
+.change .bi-globe {
+  margin-left: 5px;
+  font-size: 20px;
+}
+.country{
+  top:-3px;
+}
+}
