@@ -44,17 +44,17 @@ function deadline() {
               We deliver to Jutland and the fixed islands as well as Bornholm
             </p>
           </div>
-          <div class="container text-center my-5  ">
-            <div class="row gap-5 deleivery" style={{ marginLeft: "12rem" }}>
-              <div class="col-sm-3 border rounded ">
+          <div className="container text-center my-5  ">
+            <div className="row gap-5 deleivery" style={{ marginLeft: "12rem" }}>
+              <div className="col-sm-3 border rounded ">
                 <h3>DKK 60</h3>
                 <p>With simple delivery</p>
               </div>
-              <div class="col-sm-3 border rounded ">
+              <div className="col-sm-3 border rounded ">
                 <h3>DKK 30</h3>
                 <p>By subscription</p>
               </div>
-              <div class="col-sm-3 border rounded">
+              <div className="col-sm-3 border rounded">
                 <h3>For free</h3>
                 <p>When ordering &gt; DKK 699.</p>
               </div>

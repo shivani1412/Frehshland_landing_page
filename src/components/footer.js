@@ -7,7 +7,7 @@ import mobilpay from "./assets/img/mobilepay.png";
 function footer() {
   return (
     <>
-      <div class="footer container-fluid mt-5">
+      <div className="footer container-fluid mt-5">
         <div className="px-5">
           <div className="row listsection">
             <div className="col-sm-3">
@@ -37,7 +37,7 @@ function footer() {
               <button className="btn change">
                 <span className="country">Change country</span>
                 <span>
-                  <i class="bi bi-globe"></i>
+                  <i className="bi bi-globe"></i>
                 </span>
               </button>
             </div>
@@ -55,20 +55,20 @@ function footer() {
             <ul>
               <li className="nav-link">
                 {" "}
-                <i class="bi bi-facebook"></i>
+                <i className="bi bi-facebook"></i>
               </li>
 
               <li className="nav-link">
-                <i class="bi bi-twitter"></i>
+                <i className="bi bi-twitter"></i>
               </li>
               <li className="nav-link">
-                <i class="bi bi-instagram"></i>
+                <i className="bi bi-instagram"></i>
               </li>
               <li className="nav-link">
-                <i class="bi bi-youtube"></i>
+                <i className="bi bi-youtube"></i>
               </li>
               <li className="nav-link">
-                <i class="bi bi-linkedin"></i>
+                <i className="bi bi-linkedin"></i>
               </li>
             </ul>
           </div>

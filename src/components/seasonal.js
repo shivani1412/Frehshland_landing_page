@@ -1,12 +1,14 @@
 import React from "react";
 import potatos from "./assets/img/potatoes.png";
-import Applechowder from "./assets/img/applechowder.png";
+// import Applechowder from "./assets/img/applechowder.png";
 import seasonalbox from "./assets/img/seasonalbox.png";
 import orangevip from "./assets/img/orange vip.png";
 import passion from "./assets/img/passion fruit.png";
 import Asparagus from "./assets/img/Asparagus.png";
 import Mathilde from "./assets/img/Mathilde.png";
-function seasonal() {
+
+
+function seasonal({ products }) {
   return (
     <>
       <div className="seasonal">
@@ -16,54 +18,41 @@ function seasonal() {
               <h1>Seasonal goods</h1>
               <p>Get the taste of the season delivered right to your door</p>
             </div>
-            <div class="row m-0">
-              <div class="col-sm-3">
-                <div class="card border-0  fruits">
+            <div className="row m-0">
+            {products.map((product) => (
+
+              <div className="col-sm-3" key={product.id}>
+                <div className="card border-0  fruits">
                   <img src={potatos} alt="orange" className="mx-4" />
-                  <div class="card-body">
+                  <div className="card-body">
                     <h5
-                      class="card-title  text-center fw-bolder"
+                      className="card-title  text-center fw-bolder"
                       style={{ fontSize: "15px" }}
                     >
-                      Organic Orange (5kg) 🇪🇸
+                      {product.title}
                     </h5>
-                    <p class="card-text text-center">DKK 139 </p>
-                    <button type="button" class="btn Basketbtn">
+                    <p className="card-text text-center">{product.price}</p>
+                    <button type="button" className="btn Basketbtn">
                       ADD TO BASKET
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-3">
-                <div class="card border-0 fruits">
-                  <img src={Applechowder} alt="Applechowder" className="mx-4" />
-                  <div class="card-body">
-                    <h5
-                      class="card-title  text-center fw-bolder"
-                      style={{ fontSize: "15px" }}
-                    >
-                      Organic Hass Avocado (2kg) 🇪🇸
-                    </h5>
-                    <p class="card-text text-center">DKK 129 </p>
-                    <button type="button" class="btn Basketbtn">
-                      ADD TO BASKET
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="card border-0  fruits ">
+              ))}
+              
+              <div className="col-sm-3">
+                <div className="card border-0  fruits ">
                   <img src={seasonalbox} alt="seasonalbox" className="mx-4" />
-                  <div class="card-body">
+                  <div className="card-body">
                     <h5
-                      class="card-title  text-center fw-bolder "
+                      className="card-title  text-center fw-bolder "
                       style={{ fontSize: "15px" }}
                     >
                       Organic Clementine <br />
                       (3kg) 🇪🇸
                     </h5>
-                    <p class="card-text text-center">DKK 139 </p>
-                    <button type="button" class="btn Basketbtn">
+                    <p className="card-text text-center">DKK 139 </p>
+                    <button type="button" className="btn Basketbtn">
                       ADD TO BASKET
                     </button>
                   </div>
@@ -172,6 +161,7 @@ function seasonal() {
           </div>
         </div>
       </div>
+   
     </>
   );
 }

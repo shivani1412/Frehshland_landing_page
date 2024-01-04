@@ -563,6 +563,29 @@ html{
   .btn.change {
     margin-left: 0rem;
   }
+
+  /* aadproduct-detail */
+  .aadproduct-detail{
+    /* margin: auto 4.5rem !important; */
+    padding: 0rem !important;
+  }
+  .Category{
+   text-align: center;
+  }
+  .turban{
+    width: 100% !important;
+   
+  }
+  .related-items {
+    margin-left: 3rem !important;
+  }
+  p .Orangefruit{
+    margin-left: 0rem;
+    width: 100%;
+  }
+  .detail-container {
+    margin-left: 10px !important;
+  }
 }
 
 /* media query for tab */
@@ -675,6 +698,19 @@ html{
     width: 95%;
     margin-left: 58px;
   }
+  .container-fulid .turban {
+    width: 100%;
+  }
+  p .Orangefruit {
+     margin-left: 4rem;
+}
+.related-items{
+  margin-left: -2rem !important;
+}
+.detail-container {
+  margin-left: 4px !important;
+}
+
   /* footer */
 
   .footer .px-5 {
@@ -697,4 +733,107 @@ html{
     font-size: 24px;
     margin-left: 5px;
   }
+}
+
+
+
+/* product detail page */
+.aadproduct-detail{
+  padding: 3rem;
+  /* margin: auto 4.5rem !important; */
+}
+.detail-container {
+  margin-left: 200px;
+  margin-top: 20px;
+}
+.description{
+  text-transform: uppercase;
+  text-align: center;
+ 
+}
+.description li{
+  border-top: 3px solid;
+
+}
+.description li a{
+  text-decoration: none;
+  color: #219028;
+  font-size: 12px;
+}
+
+.ProductDeatils .Organic h1{
+  font-family: "Calistoga", serif;
+}
+.Dkk{
+  color: #219028;
+}
+
+.sun-ripened p{
+  display: inline-block;
+    background: #D9EAD3;
+    padding: 10px;
+    margin-right: 9px;
+    border-radius: 10px;
+}
+.form-check-input:checked {
+  background-color: #219028 !important;
+  border-color: #219028 !important;
+}
+
+.minus, .plus{
+  width:20px;
+  border-radius:4px;
+  padding:8px 5px 8px 5px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.inputplus{
+  height: 27px;
+  width: 39px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.numberbtn{
+  display: grid;
+  grid-template-columns: 100px 200px;
+  column-gap: 10px;
+}
+.numberbtn button{
+  background-color: #219028;
+  color: #fff;
+}
+.Category{
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #5454548c;
+  font-weight: 600;
+
+}
+.turban h2{
+  font-family: "Calistoga", serif;
+
+}
+.turban{
+  width: 50%;
+  margin: auto;
+}
+.Orangefruit{
+  margin-left: 3rem;
+}
+.Nave{
+  color:#545454;
+}
+/* related-product */
+.related-items{
+  
+  margin-left: -8rem;
+}
+.related-items h1{
+  font-family: "Calistoga", serif;
 }

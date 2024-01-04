@@ -21,30 +21,30 @@ function newsletter() {
               </div>
               <div className="col-sm-6">
                 <div className="inputfeildcol">
-                  <div class="mb-3">
+                  <div className="mb-3">
                     <label
-                      for="exampleFormControlTextarea1"
-                      class="form-label fw-bolder"
+                     htmlFor="exampleFormControlTextarea1"
+                      className="form-label fw-bolder"
                     >
                       First Name
                     </label>
                     <input
                       type="name"
-                      class="form-control py-3"
+                      className="form-control py-3"
                       id="exampleFormControlInput1"
                       placeholder=" Your First Name"
                     />
                   </div>
-                  <div class="mb-3">
+                  <div className="mb-3">
                     <label
-                      for="exampleFormControlInput1"
-                      class="form-label fw-bolder"
+                      htmlFor="exampleFormControlInput1"
+                      className="form-label fw-bolder"
                     >
                       Email address
                     </label>
                     <input
                       type="email"
-                      class="form-control py-3"
+                      className="form-control py-3"
                       id="exampleFormControlInput1"
                       placeholder="Your Email"
                     />

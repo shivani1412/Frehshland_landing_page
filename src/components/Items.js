@@ -1,9 +1,29 @@
-import React from "react";
+import React ,{useState, useEffect}from "react";
 import Orange from "./assets/img/orange.png";
-import Avocado from "./assets/img/Avocado.png";
-import Clementine from "./assets/img/clementin.png";
 import Almond from "./assets/img/Almonds.png";
+import { Link } from "react-router-dom";
+import Seasonal from "./seasonal";
+import Deadline from "./deadline";
+
 function Item() {
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("http://shivani.local/wp-json/custom/v1/products");
+
+        const data = await response.json();
+        console.log(data);
+        setProducts(data);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
       <div className="itemscontainer">
@@ -12,77 +32,50 @@ function Item() {
             <h1>Popular Items</h1>
             <p>Order directly from the trees</p>
           </div>
-          <div class="row m-0">
-            <div class="col-sm-3">
-              <div class="card border-0  fruits">
+          <div className="row m-0">
+          {products.map((product) => (
+            <div className="col-sm-3"  key={product.id}>
+           
+              <div className="card border-0  fruits ">
+              <Link to="/product-detail">
                 <img src={Orange} alt="orange" className="mx-4" />
-                <div class="card-body">
+                </Link>
+                <div className="card-body">
                   <h5
-                    class="card-title  text-center fw-bolder"
+                    className="card-title  text-center fw-bolder"
                     style={{ fontSize: "15px" }}
                   >
-                    Organic Orange (5kg) 🇪🇸
+                     {product.title}
                   </h5>
-                  <p class="card-text text-center">DKK 139 </p>
-                  <button type="button" class="btn Basketbtn">
+                  <p className="card-text text-center">{product.price}</p>
+                  <button type="button" className="btn Basketbtn">
                     ADD TO BASKET
                   </button>
                 </div>
               </div>
             </div>
-            <div class="col-sm-3">
-              <div class="card border-0 fruits">
-                <img src={Avocado} alt="Avocado" className="mx-4" />
-                <div class="card-body">
-                  <h5
-                    class="card-title  text-center fw-bolder"
-                    style={{ fontSize: "15px" }}
-                  >
-                    Organic Hass Avocado (2kg) 🇪🇸
-                  </h5>
-                  <p class="card-text text-center">DKK 129 </p>
-                  <button type="button" class="btn Basketbtn">
-                    ADD TO BASKET
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card border-0  fruits ">
-                <img src={Clementine} alt="Clementine" className="mx-4" />
-                <div class="card-body">
-                  <h5
-                    class="card-title  text-center fw-bolder "
-                    style={{ fontSize: "15px" }}
-                  >
-                    Organic Clementine <br />
-                    (3kg) 🇪🇸
-                  </h5>
-                  <p class="card-text text-center">DKK 139 </p>
-                  <button type="button" class="btn Basketbtn">
-                    ADD TO BASKET
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card border-0  fruits">
+          ))}
+            <div className="col-sm-3">
+              <div className="card border-0  fruits">
+              <Link to="/product-detail">
                 <img src={Almond} alt="Almond" className="mx-4" />
-                <div class="card-body">
+                </Link>
+                <div className="card-body">
                   <h5
-                    class="card-title  text-center fw-bolder"
+                    className="card-title  text-center fw-bolder"
                     style={{ fontSize: "15px" }}
                   >
                     Organic Almonds (900g)<br></br> 🇵🇹
                   </h5>
-                  <p class="card-text text-center">DKK 199 </p>
+                  <p className="card-text text-center">DKK 199 </p>
                   {/* <a href="name" class="btn Basketbtn mx-2">ADD TO BASKET</a> */}
-                  <button type="button" class="btn Basketbtn">
+                  <button type="button" className="btn Basketbtn">
                     ADD TO BASKET
                   </button>
                 </div>
               </div>
             </div>
+           
           </div>
           <div className="allproductsbtn my-5">
             <button type="button" className="btn seebtn fs-4 fw-bolder">
@@ -91,6 +84,12 @@ function Item() {
           </div>
         </div>
       </div>
+      {/* {products.map((product) => (
+              <Seasonal  key={product.id} product={product} />
+            ))}
+       */}
+        <Deadline />
+         <Seasonal products={products} />
     </>
   );
 }
